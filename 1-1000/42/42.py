@@ -42,7 +42,7 @@ class Solution:
                 post_max = max(height[y], post_max)
             else:
                 ans = ans + (pre_max - height[x])
-                x = x = 1
+                x = x + 1
                 pre_max = max(height[x], pre_max)
 
         return ans
